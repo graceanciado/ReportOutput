@@ -1,0 +1,1548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=iso-8859-1">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FFFFFF;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #D3D3D3;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FFFFFF;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.bodydate
+{
+  background-color: #FFFFFF;
+  border-spacing: 0px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: x-small;
+  font-weight: bold;
+  text-align: left;
+}
+.bylinecontainer
+{
+  background-color: #FFFFFF;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FFFFFF;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.contentprocname
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.contents
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.continued
+{
+  background-color: #FFFFFF;
+  border-spacing: 0px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFCC;
+  border: 1px solid #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+}
+.dataemphasis
+{
+  background-color: #D3D3D3;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #D3D3D3;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFCC;
+  border: 1px solid #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+}
+.datafixed
+{
+  background-color: #FFFFCC;
+  border: 1px solid #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #D3D3D3;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #D3D3D3;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0066AA
+}
+a:visited {
+color:#004488
+}
+a:active {
+color:#004488
+}
+.errorbanner
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FFFFFF;
+  border: 1pt solid #000000;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #FFA500;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  text-align: center;
+}
+.headeremphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.headeremphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.headerempty
+{
+  background-color: #FFA500;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  text-align: center;
+}
+.headerfixed
+{
+  background-color: #FFA500;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.headersandfooters
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+.headerstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.indextitle
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #002288;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+}
+.list
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #F0F0F0;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FFFFFF;
+  border-spacing: 0px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.pagesprocname
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.pagestitle
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.paragraph
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FF5757;
+  font-family: arial, helvetica;
+  font-size: small;
+  text-align: left;
+}
+.proctitlefixed
+{
+  background-color: #FF5757;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.rowfooter
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  text-align: left;
+}
+.rowheaderemphasis
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+  text-align: left;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+  text-align: left;
+}
+.rowheaderempty
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  text-align: left;
+}
+.rowheaderfixed
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.rowheaderstrong
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.rowheaderstrongfixed
+{
+  background-color: #FFFFFF;
+  font-family: arial, helvetica;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.systemfooter
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter10
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter2
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter3
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter4
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter5
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter6
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter7
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter8
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemfooter9
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: small;
+  font-weight: normal;
+  text-align: left;
+}
+.systemtitle
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle10
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle2
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle3
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle4
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle5
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle6
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle7
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle8
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systemtitle9
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: arial, helvetica;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+.systitleandfootercontainer
+{
+  background-color: #FFFFFF;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-color: #0000BD;
+  border-left-color: #5757FF;
+  border-right-color: #0000BD;
+  border-spacing: 1px;
+  border-style: solid;
+  border-top-color: #5757FF;
+  border-width: 2px;
+  text-align: left;
+  width: 100%;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FFFFFF;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FFFFFF;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"><!--webbot bot="Include" endspan i-checksum="27640" --><table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><tr><td></td></tr><TR><TD ALIGN=CENTER bgcolor="#FFFFFF">  <b><p</TD></TR></table>
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<CENTER><TR><TD><p><a name="Top">
+<font face="arial, helvetica" size="5"><b>Information Management</a><br></font>
+<font face="arial, helvetica" size="4"><b>XXXX Reports Due and Approved<br></font>
+<font face="arial, helvetica" size="3"><b>By Site/Subsite<br></font>
+<font face="arial, helvetica" size="2"><b>For period 1 Oct 2021 to 31 Oct 2021</b><br></font>
+<font face="arial, helvetica" size="1">Report <font size="2">820<font size="1"> created on 3 Nov 2021 using data extracted from the XXXXXXXXX on 2 Nov 2021</font><br>
+<font face="arial, helvetica" size="1">Report owner is: XXXXXXXXXXXXXXX </font>
+</p></td></tr>
+<input type="button" value="Area/Region/Site" onclick="window.location='r820mthregn.html'" title="Show the Area report" style="background-color:#FFCC99">
+<input type="button" value="Site/Subsite" title="Show the Site report">
+<br>
+<input type="button" value="National Download" onclick="window.location='r820mthnational.xlsx'" title="Download this report to Excel" style="background-color:#FFCC99">
+<br>
+<input type="button" value="User Guide" onclick="window.location='r820_requirement.doc'" title="Show Report Specifications" style="background-color:#FFCC99">
+<input type="button" value="Top" title="Go to Top of this report">
+<input type="button" value="Bottom" onclick="window.location='#bottom'" title="Go to Bottom of this report" style="background-color:#FFFFCC">
+<input type="button" value="Back" onclick="window.location='javascript:window.history.back()'" title="Back one report in this group" style="background-color:#FFFFCC">
+<input type="button" value="Fwrd" onclick="window.location='javascript:window.history.forward()'" title="Forward one report in this group" style="background-color:#FFFFCC">
+<input type="button" value="Print" onClick="window.print()" title="Print this report" style="background-color:#FFFFCC">
+<input type="button" value="Close" onclick="window.location='javascript:window.close()'" title="Close this window" style="background-color:#FFFFCC">
+</font></form>
+</CENTER>
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<div align="left">
+<table class="table" cellspacing="1" rules="all" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="2" colspan="2" scope="colgroup">Site / Subsite</th>
+<th class="c header" colspan="7" scope="colgroup">xxx Reports - </th>
+<th class="c header" colspan="4" scope="colgroup">Number of Clients - </th>
+</tr>
+<tr>
+<th class="c header" scope="col">Due in the<br/>period</th>
+<th class="c header" scope="col">Due in the<br/>period and<br/>approved on<br/>time</th>
+<th class="c header" scope="col">% Approved<br/>on time in<br/>the period</th>
+<th class="c header" scope="col">Due in the<br/>period and<br/>approved late</th>
+<th class="c header" scope="col">Due in the<br/>period and<br/>not approved</th>
+<th class="c header" scope="col">Approved in<br/>the period</th>
+<th class="c header" scope="col">Due in the<br/>next 3 months</th>
+<th class="c header" scope="col">Due for a<br/>xxx report<br/>in the period</th>
+<th class="c header" scope="col">Had a xxx <br/>report approved<br/>in the period</th>
+<th class="c header" scope="col">Overdue for<br/>a xxx<br/>report in<br/>the period</th>
+<th class="c header" scope="col">Have a xxx<br/>report due<br/>in the next<br/>3 months</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row"><a href="r820mthsite-1001.html">Unknown</a>                                             </th>
+<th class="l t rowheader" scope="row">Unknown                                </th>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">n/a</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">n/a</td>
+<td class="r b data" style=" background-color: #ADD8E6;">n/a</td>
+<td class="r b data" style=" background-color: #ADD8E6;">n/a</td>
+<td class="r b data" style=" background-color: #ADD8E6;">n/a</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row"><a href="r820mthsite9000.html">yyy1</a>                                              </th>
+<th class="l t rowheader" scope="row">yyy1                               </th>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">n/a</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">n/a</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">n/a</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+</tr>
+<tr>
+<tr>
+<th class="l t rowheader" scope="row"><a href="r820mthsite9501.html">yyy2</a>                                              </th>
+<th class="l t rowheader" scope="row">yyy2                             </th>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">  0.0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">     </td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row"><a href="r820mthsite10000.html">yyy3</a>                            </th>
+<th class="l t rowheader" scope="row">yyy3               </th>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+<td class="r b data" style=" background-color: #ADD8E6;">    0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<CENTER><TR><TD><p><a name="Top">
+</p></td></tr>
+<input type="button" value="User Guide" onclick="window.location='r820_requirement.doc'" title="Show Report Specifications" style="background-color:#FFCC99">
+<input type="button" value="Top" onclick="window.location='#top'" title="Go to Top of this report" style="background-color:#FFFFCC">
+<input type="button" value="Bottom" title="Go to Bottom of this report">
+<input type="button" value="Back" onclick="window.location='javascript:window.history.back()'" title="Back one report in this group" style="background-color:#FFFFCC">
+<input type="button" value="Fwrd" onclick="window.location='javascript:window.history.forward()'" title="Forward one report in this group" style="background-color:#FFFFCC">
+<input type="button" value="Print" onClick="window.print()" title="Print this report" style="background-color:#FFFFCC">
+<input type="button" value="Close" onclick="window.location='javascript:window.close()'" title="Close this window" style="background-color:#FFFFCC">
+<p><font face="arial, helvetica" size="1"><a align="right" name="Bottom">03NOV2021  8:35:21</b></a></font></p>
+</font></form>
+</CENTER>
+<table BORDER="0" WIDTH="715"><tr><td ALIGN="LEFT" WIDTH="184"><img SRC="logo_lvl3.gif" WIDTH="184" HEIGHT="134" ></td><td ALIGN="LEFT" WIDTH="10"><img SRC="../space01.gif" " "WIDTH=" HEIGHT="1"></td><td ALIGN="left" VALIGN="CENTER" WIDTH="355"><p align="left"><font size="5">Information Management</font><img SRC="../space01.gif" WIDTH="1" HEIGHT="1" ></td></tr></table> </body>
+</html>
